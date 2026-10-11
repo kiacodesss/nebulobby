@@ -92,6 +92,16 @@
     font-family: Consolas, "Courier New", monospace;
 }
 
+span, .ic {
+    font-family: monospace, monospace;
+    background-color: #f0f0f0; /* Light grey background */
+    color: #d63384; /* Optional: a nice accent color for the text */
+    padding: 0.2em 0.4em; /* Adds a little breathing room inside */
+    border-radius: 4px;
+    font-size: 13.5px; /* Slightly smaller to fit nicely with regular text */
+    font-weight: bold;
+}
+
 /* =========================
    NOTES
 ========================= */

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcade | CSS</title>
+
+    <link rel="stylesheet" href="../../css/home.css">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/articles.css">
+</head>
+
+<body>
+    <div class="main-container">
+
+        <!-- Website Banner -->
+        <div class="header">
+            <img src="../../assets/main-header.png">
+        </div>
+
+        <!-- Main Navigation -->
+        <div class="nav-bar">
+            <ul class="links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../references.html">References</a></li>
+                <li><a href="../../about.html">About</a></li>
+            </ul>
+        </div>
+
+        <!-- Page content -->
+        <div class="content-layout">
+            <aside class="sidebar">
+                <p>Use the links below to jump to sections!</p>
+                <a href="#intro">Intro to CSS</a><br>
+                <a href="#basics">CSS 101</a><br>
+                <a href="#tags">Properties</a><br>
+                <a href="#attributes">Selectors</a><br>
+                <a href="#examples">Code Examples</a><br>
+                <a href="#resources">More Resources</a><br>
+            </aside>
+
+            <!-- Main Content -->
+            <article class="article">
+
+                <header class="article-header">
+                    <p class="article-category">CSS Blog / Lesson 01</p>
+
+                    <h1 class="article-title">
+                        Styling with CSS
+                    </h1>
+
+                    <p class="article-meta">
+                        October 11, 2026 · 5 min read
+                    </p>
+                </header>
+
+                <section id="intro">
+                    <h2>Intro to CSS</h2>
+
+                    <p>
+                        Now that we've gone over the basics of HTML, let's bring life to your code with CSS! In this lesson, I will be separating this lesson into two blogs: 
+                        CSS Basics and Advanced CSS. In CSS Basics, I will be explaining the different properties and selectors used to add styling to the elements in your 
+                        HTML. While in Advanced CSS, we will go further deeper into CSS by learning about animations, keyframes, and cool effects!
+                    </p>
+
+                    <p>
+                        Since, you already learned HTML, let's practice more on using both HTML and CSS so that you'll know how to connect them. This also means that
+                        we'll still be using an online compiler to test out the codes so ready your online compiler on the side!
+                    </p>
+                </section>
+
+                <section id="basics">
+                    <h2>CSS 101</h2>
+
+                    <p>
+                        What is CSS? CSS stands for Cascading Style Sheets, they are solely responsible for making your webpage look pretty by adding different colors,
+                        fonts, and more, to your liking! CSS uses properties and selectors to assign styling rules to your HTML elements.
+                    </p>
+
+                    <p>
+                        When commenting in CSS, we can do it in two ways.
+                        <ul>
+                            <li><span class="ic">// Text</span> -  used for a single-line comment and uses two forward slash then followed by your comment text.</li>
+                            <li><span class="ic">/* Text */</span> - used for commenting a block of text with multiple lines. It also uses a combination of a forward
+                                slash ( / ) and an asterisk ( * ), and should be closed at the end.</li>
+                        </ul>
+                    </p>
+
+                    <p>
+                       One more thing that you should always keep in mind, when it comes to assigning properties to an HTML element, you have to first specify what
+                       HTML element you want to assign and then use curly brackets { }, inside those brackets are the properties. 
+                    </p>
+                </section>
+
+                <section id="properties">
+                    <h2>CSS Properties</h2>
+
+                    <p>
+                       In CSS, we have many properties that are used for different purposes. Don't worry if you don't memorize all of them at once, what matters is
+                       that you understand how they work. I'll be separating them into four subsections: texts, colors, images, and positioning. 
+                    </p>
+
+                    <h3>Text</h3>
+                    <ul>
+                        <li><span class="ic">font-family:</span> - specifies the font you want for your text.</li>
+                        <li><span class="ic">font-size:</span> - specifies the font size using a set number value in px (pixels).</li>
+                        <li><span class="ic">font-weight:</span> - controls the thickness of the text, you can either set it as a word like "regular", "bold", "bolder" or a number like "500" "800"</li>
+                        <li><span class="ic">text-align:</span> - aligns text horizontally, you can either set it as left, center, right, or justify.</li>
+                        <li><span class="ic">text-transform:</span> - controls the capitalization of text which can be set as uppercase, lowercase, or capitalize.</li>
+                        <li><span class="ic">line-height:</span> - controls the spacing between lines of text and can be set using number values.</li>
+                    </ul>
+
+                    <h3>Colors</h3>
+                    <ul>
+                        <li><span class="ic">color:</span> - sets the text color</li>
+                        <li><span class="ic">background-color:</span> - fills the background of an element with a color you want</li>
+                        <li><span class="ic">border-color:</span> - sets the color of an element's border like adding a yellow border to an image.</li>
+                    </ul>
+
+                    <h3>Images</h3>
+                    <ul>
+                        <li><span class="ic">width:</span> and <span class="ic">height:</span> - controls the dimensions of an image which can be specified by a number value and set in px (pixels) or just "auto"</li>
+                        <li><span class="ic">max-width:</span> and <span class="ic">max-height:</span> - helps make sure that images stay responsive when viewed on smaller screens, set using a number value as percentage.</li>
+                        <li><span class="ic">object-fit:</span> - determines how an image scales inside its container, useful for cropping or filling spaces</li>
+                        <li><span class="ic">border-radius:</span> - rounds the corners of an image, often used to make square photos circular</li>
+                    </ul>
+                    
+                    <h3>Positioning & Layout</h3>
+                    <ul>
+                        <li><span class="ic">display:</span> - determines how an element behaves in the layout flow, such as block, inline, flex, or grid (e.g., display: flex;).</li>
+                        <li><span class="ic">position:</span> - defines how an element is positioned on the page (e.g., static, relative, absolute, or fixed).</li>
+                        <li><span class="ic">margin:</span> - creates space outside of an element's border (e.g., margin: 0 auto; to center a block).</li>
+                        <li><span class="ic">padding:</span> - creates space inside an element, between the content and the border (e.g., padding: 20px;).</li>
+                        <li><span class="ic">gap:</span> - controls the space between items inside a Flexbox or Grid container (e.g., gap: 10px;).</li>
+                    </ul>
+                </section>
+
+                <section id="selectors">
+                    <h2>CSS Selectors</h2>
+                    <p>
+                       Moving on to CSS selectors, they are used to find or select the HTML elements you want to style. There are many types of selectors, but for
+                       now, we're going to focus on the very basic ones that you'll probably need in styling your profile. 
+                    </p>
+
+                    <h3>Element Selectors</h3>
+                    <p>
+                       An <b>element selector</b> selects HTML elements based on the element name. This is especially helpful if you want to add a very specific styling to
+                       an element. For instance, you want to make all your paragraphs color red and center aligned. 
+                    </p>
+                    <pre><code>.p {
+    color: red; 
+    text-align: center;
+}</code></pre>
+                    <h3>Class Selectors</h3>
+                    <p>
+                        The <b>class selector</b> selects HTML elemenets with a specific class attribute. In order to do this with CSS, you have to first enter a period
+                        ( . ) followed by the class name then the { }.
+                    </p>
+                    <h4>HTML Code</h4>
+                    <pre><code>&#x3C;!-- Class can be reused across multiple elements --&#x3E;
+&#x3C;div class=&#x22;card&#x22;&#x3E;
+    &#x3C;p&#x3E;This is the first card.&#x3C;/p&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;div class=&#x22;card&#x22;&#x3E;
+    &#x3C;p&#x3E;This is the second card sharing the same style.&#x3C;/p&#x3E;
+&#x3C;/div&#x3E;
+</code></pre>
+                    <h4>CSS Code</h4>
+<pre><code>/* Target a Class using the dot (.) symbol */
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+}</code></pre>
+                    <div class="article-note">
+                        <p>
+                            <b>Important:</b> You can't make up new class names when styling in CSS, for it to work, you should always make sure that the class you're
+                            referring to actually exists in your HTML and is identical.
+                        </p>
+                    </div>
+                    <h3>ID Selectors</h3>
+                    <p>
+                        The <b>id selector</b> uses the id attribute of an HTML element to select a specific element where you want to apply a unique styling to.
+                        In class selectors, you first enter a period, however, with id selectors you use a hastag # instead, then followed by the id name.
+                    </p>
+                    <pre><code>/* Target the ID using the hash (#) symbol */
+#unique-banner {
+    background-color: #ffcc00;
+    color: #333333;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+}</code></pre>
+                    <h3>Universal Selectors</h3>
+                    <p>
+                        The <b>universal selector</b> selects all HTML elements on the page, to do this you have to use an asterisk * and assign properties to it. 
+                        So that means if you apply a style rule using a universal selector it will affect everything on your page, which is why its called universal.
+                    </p>
+                    <pre><code>* {
+  text-align: center;
+  color: blue;
+}</code></pre>
+                    <h3>Grouping Selectrs</h3>
+                    <p>
+                        The <b>grouping selector</b> selects all the HTML elements with the same styling rules. There are times when you might want the same styling
+                        applied to different HTML elements, for it to be less repetitive, you can group all the HTML elements together and assign the rule you
+                        want. Grouping selectors will help you save code lines!
+                    </p>
+                    <h4>Before</h4>
+                    <pre><code>h1 {
+  text-align: center;
+  color: red;
+  font-weight: 800px;
+}
+
+h2 {
+  text-align: center;
+  color: red;
+  font-weight: 800px;
+}
+
+p {
+  text-align: center;
+  color: red;
+  font-weight: 800px;
+}</code></pre>
+
+<h4>After</h4>
+<pre><code>h1, h2, p {
+  text-align: center;
+  color: red;
+  font-weight: 800px;
+}</code></pre>
+                </section>
+
+                <section id="examples">
+                    <h2>Code Examples</h2>
+
+                    <p>
+                        Blah blah
+                    </p>
+
+<h4>HTML Code</h4>
+                    <pre><code>&#x3C;div id=&#x22;profile-banner&#x22;&#x3E;
+    &#x3C;h1&#x3E;Jane Doe&#x3C;/h1&#x3E;
+    &#x3C;h2&#x3E;Web Developer&#x3C;/h2&#x3E;
+    &#x3C;p&#x3E;Welcome to my personal corner of the internet!&#x3C;/p&#x3E;
+    
+    &#x3C;div class=&#x22;bio-box&#x22;&#x3E;
+        &#x3C;p class=&#x22;highlight&#x22;&#x3E;I love coding and building simple websites.&#x3C;/p&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+
+<h4>CSS Code</h4>
+<pre><code>/* 1. Universal Selector */
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* 2. Grouping Selector */
+h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* 3. Element Selector */
+p {
+    color: #555555;
+    font-size: 15px;
+}
+
+/* 4. Class Selector */
+.highlight {
+    background-color: #ffeb3b;
+    padding: 4px;
+}
+
+/* 5. ID Selector */
+#profile-banner {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 10px;
+}</code></pre>
+
+<h4>HTML Code</h4>
+<pre><code>&#x3C;div id=&#x22;main-article&#x22;&#x3E;
+    &#x3C;h2&#x3E;CSS Basics&#x3C;/h2&#x3E;
+    
+    &#x3C;div class=&#x22;card&#x22;&#x3E;
+        &#x3C;h3&#x3E;Selectors&#x3C;/h3&#x3E;
+        &#x3C;p&#x3E;Selectors help you target elements easily.&#x3C;/p&#x3E;
+    &#x3C;/div&#x3E;
+    
+    &#x3C;p&#x3E;Thanks for reading!&#x3C;/p&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+
+<h4>CSS Code</h4>
+<pre><code>/* 1. Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Grouping Selector */
+h2, h3 {
+    color: #d63384;
+}
+
+/* 3. Element Selector */
+p {
+    color: #333333;
+    line-height: 1.5;
+}
+
+/* 4. Class Selector */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+/* 5. ID Selector */
+#main-article {
+    background-color: #f8f9fa;
+    padding: 30px;
+}</code></pre>
+                </section>
+
+                <section id="resources">
+                    <h2>More Resources</h2>
+                    <ul>
+                        <li>Source</li>
+                        <li>Source</li>
+                        <li>Source</li>
+                    </ul>
+                </section>
+
+                <!-- Previous and next article links -->
+                    <nav class="article-navigation">
+                        <a href="../../index.html">
+                            ← Back to Home
+                        </a>
+
+                        <a href="../../blogs/css/css-basics.html">
+                            Next Article →
+                        </a>
+                    </nav>
+            </article>
+        </div>
+    </body>
+</html>

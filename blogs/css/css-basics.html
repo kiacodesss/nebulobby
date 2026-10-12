@@ -34,10 +34,11 @@
                 <p>Use the links below to jump to sections!</p>
                 <a href="#intro">Intro to CSS</a><br>
                 <a href="#basics">CSS 101</a><br>
-                <a href="#tags">Properties</a><br>
-                <a href="#attributes">Selectors</a><br>
+                <a href="#properties">Properties</a><br>
+                <a href="#layout">Layout</a><br>
+                <a href="#selectors">Selectors</a><br>
                 <a href="#examples">Code Examples</a><br>
-                <a href="#resources">More Resources</a><br>
+                <a href="#notes">Author's Note</a><br>
             </aside>
 
             <!-- Main Content -->
@@ -59,14 +60,14 @@
                     <h2>Intro to CSS</h2>
 
                     <p>
-                        Now that we've gone over the basics of HTML, let's bring life to your code with CSS! In this lesson, I will be separating this lesson into two blogs: 
-                        CSS Basics and Advanced CSS. In CSS Basics, I will be explaining the different properties and selectors used to add styling to the elements in your 
-                        HTML. While in Advanced CSS, we will go further deeper into CSS by learning about animations, keyframes, and cool effects!
+                        Now that we've already gone over the basics of HTML, let's bring life to your profile with CSS! Just a heads up, I will be separating this lesson into two blogs: 
+                        CSS Basics and Advanced CSS. In CSS Basics, I will be explaining the properties and selectors used to add styling to your HTML elements. While, in Advanced CSS,
+                        we will go further deeper into CSS by learning about cool animations, keyframes, and effects!
                     </p>
 
                     <p>
-                        Since, you already learned HTML, let's practice more on using both HTML and CSS so that you'll know how to connect them. This also means that
-                        we'll still be using an online compiler to test out the codes so ready your online compiler on the side!
+                        In this lesson, expect that we're going to use both HTML and CSS now so that you'll get a gist on how they work together. This also means that
+                        we'll still be using an online compiler to test out the codes so be sure to ready it on the side!
                     </p>
                 </section>
 
@@ -74,16 +75,14 @@
                     <h2>CSS 101</h2>
 
                     <p>
-                        What is CSS? CSS stands for Cascading Style Sheets, they are solely responsible for making your webpage look pretty by adding different colors,
-                        fonts, and more, to your liking! CSS uses properties and selectors to assign styling rules to your HTML elements.
+                        What is CSS? <b>CSS</b> stands for Cascading Style Sheets, they are solely responsible for making your webpage look pretty by adding colors,
+                        animations, a cool layout, and more, to your liking! In CSS, we use properties and selectors to assign styling rules to your HTML elements.
                     </p>
 
                     <p>
-                        When commenting in CSS, we can do it in two ways.
+                        But hold on! How do you comment in CSS? Well, we can do it this way:
                         <ul>
-                            <li><span class="ic">// Text</span> -  used for a single-line comment and uses two forward slash then followed by your comment text.</li>
-                            <li><span class="ic">/* Text */</span> - used for commenting a block of text with multiple lines. It also uses a combination of a forward
-                                slash ( / ) and an asterisk ( * ), and should be closed at the end.</li>
+                            <li><span class="ic">/* Text */</span> - for commenting a single-line text or a block of text with multiple lines, and should be closed at the end.</li>
                         </ul>
                     </p>
 
@@ -98,55 +97,142 @@
 
                     <p>
                        In CSS, we have many properties that are used for different purposes. Don't worry if you don't memorize all of them at once, what matters is
-                       that you understand how they work. I'll be separating them into four subsections: texts, colors, images, and positioning. 
+                       that you understand how they work. I'll be separating them into four subsections: <b>texts, colors, images, and positioning</b>. 
                     </p>
 
-                    <h3>Text</h3>
+                    <h3>Text Properties</h3>
                     <ul>
-                        <li><span class="ic">font-family:</span> - specifies the font you want for your text.</li>
-                        <li><span class="ic">font-size:</span> - specifies the font size using a set number value in px (pixels).</li>
-                        <li><span class="ic">font-weight:</span> - controls the thickness of the text, you can either set it as a word like "regular", "bold", "bolder" or a number like "500" "800"</li>
-                        <li><span class="ic">text-align:</span> - aligns text horizontally, you can either set it as left, center, right, or justify.</li>
-                        <li><span class="ic">text-transform:</span> - controls the capitalization of text which can be set as uppercase, lowercase, or capitalize.</li>
-                        <li><span class="ic">line-height:</span> - controls the spacing between lines of text and can be set using number values.</li>
+                        <li><span class="ic">font-family:</span> - specifies the font you want for your text (eg., "Times", "Courier", "Arial", etc).</li>
+                        <li><span class="ic">font-size:</span> - specifies the font size using a number value in pixels or px for short (e.g., "200px").</li>
+                        <li><span class="ic">font-weight:</span> - controls the thickness of the text, it accepts either a word value or number value (e.g., "normal", "bold", "bolder" or "800", which is equivalent to bold).</li>
+                        <li><span class="ic">text-align:</span> - aligns text horizontally (e.g., "left", "center", "right", "justify").</li>
+                        <li><span class="ic">text-transform:</span> - controls the capitalization of text (e.g., "uppercase", "lowercase", "capitalize").</li>
+                        <li><span class="ic">text-decoration:</span> - adds decoration to a text if you want to add an emphasis (e.g., "underline", "overline", "line-through").
+                        <li><span class="ic">line-height:</span> - controls the spacing between lines of text and can be set using number values (e.g., "1.5").</li>
                     </ul>
 
-                    <h3>Colors</h3>
+                    <h3>Color Properties</h3>
                     <ul>
-                        <li><span class="ic">color:</span> - sets the text color</li>
-                        <li><span class="ic">background-color:</span> - fills the background of an element with a color you want</li>
+                        <li><span class="ic">color:</span> - sets the text color.</li>
+                        <li><span class="ic">background-color:</span> - fills the background of an element with a color you want.</li>
                         <li><span class="ic">border-color:</span> - sets the color of an element's border like adding a yellow border to an image.</li>
                     </ul>
 
-                    <h3>Images</h3>
+                    <div class="article-note">
+                        <p>
+                            <b>Important:</b> There are three ways you can specify a color in CSS: <u>the color name</u> (e.g., "red", "blue"), the <u>HEX value</u> (e.g., "#fff000"), or the <u>RGB value</u> (e.g., "rgb(0, 0, 255)").
+                            You can choose either one of the three. <br> <br>
+                            If you want a simple color, use the color name but if you want a really specific color, you can either use a HEX or RGB value.
+                        </p>
+                    </div>
+
+                    <h3>Image Properties</h3>
                     <ul>
-                        <li><span class="ic">width:</span> and <span class="ic">height:</span> - controls the dimensions of an image which can be specified by a number value and set in px (pixels) or just "auto"</li>
-                        <li><span class="ic">max-width:</span> and <span class="ic">max-height:</span> - helps make sure that images stay responsive when viewed on smaller screens, set using a number value as percentage.</li>
-                        <li><span class="ic">object-fit:</span> - determines how an image scales inside its container, useful for cropping or filling spaces</li>
-                        <li><span class="ic">border-radius:</span> - rounds the corners of an image, often used to make square photos circular</li>
+                        <li><span class="ic">width:</span> and <span class="ic">height:</span> - controls the dimensions of an image which can be specified by a number value in px (pixels) or just "auto".</li>
+                        <li><span class="ic">max-width:</span> and <span class="ic">max-height:</span> - helps make sure that images stay responsive when viewed on smaller screens, often set using a number percentage (e.g., "10%").</li>
+                        <li><span class="ic">object-fit:</span> - determines how an image scales inside its container, very useful for cropping or filling spaces (e.g., "contain", "cover", "fill").</li>
+                        <li><span class="ic">border-radius:</span> - rounds the corners of an image using a number value.</li>
                     </ul>
                     
-                    <h3>Positioning & Layout</h3>
+                    <h3>Positioning & Layout Properties</h3>
                     <ul>
-                        <li><span class="ic">display:</span> - determines how an element behaves in the layout flow, such as block, inline, flex, or grid (e.g., display: flex;).</li>
-                        <li><span class="ic">position:</span> - defines how an element is positioned on the page (e.g., static, relative, absolute, or fixed).</li>
-                        <li><span class="ic">margin:</span> - creates space outside of an element's border (e.g., margin: 0 auto; to center a block).</li>
-                        <li><span class="ic">padding:</span> - creates space inside an element, between the content and the border (e.g., padding: 20px;).</li>
-                        <li><span class="ic">gap:</span> - controls the space between items inside a Flexbox or Grid container (e.g., gap: 10px;).</li>
+                        <li><span class="ic">display:</span> - determines how an element behaves in the layout flow (e.g., "block", "inline", "flex", "grid").</li>
+                        <li><span class="ic">position:</span> - defines how an element is positioned on the page (e.g., "static", "relative", "absolute", or "fixed").</li>
+                        <li><span class="ic">margin:</span> - creates space outside of an element's border (e.g., "0 auto").</li>
+                        <li><span class="ic">padding:</span> - creates space inside an element, between the actual content and the element border (e.g., "20px").</li>
+                        <li><span class="ic">gap:</span> - controls the space between items inside a Flexbox or Grid container (e.g., "10px";).</li>
                     </ul>
+                </section>
+
+                <section id="layout">
+                    <h2>CSS Layout</h2>
+                    <p>Since layout is a very important concept in both HTML and CSS, it's best that dive deeper into it so you can understand how to layout your profile.
+                        In the section above, I mentioned some positioning and layout properties, those are just some of them and here I'll be explaining them more in detail.
+                    </p>
+
+                    <p>
+                        First things first, let's talk about the <b>box model layout</b>. Every element you see on a webpage such as texts, images, and icons, are all made of rectangles. Not convinced?
+                        Look at the image below where I applied a universal styling to all the elements on SpaceHey using Inspect, you'll see that each element are all inside rectangles!
+                    </p>
+
+                    <img src="../../assets/sample-screenshot.jpg" alt="Sample Screenshot" width="650" height="auto">
+                    <h3>The Box Model</h3>
+                    <p>
+                        The <b>box model</b> is a box that wraps around every HTML element. Every box consists of four parts: content, padding, borders and margins. The image below illustrates how a 
+                        box model looks like.
+                    </p>
+
+                    <center><img src="../../assets/css-box-model.png" alt="Box Model" width="350" height="auto"></center>
+                <p>I'll explain the different parts again from the innermost part to outermost part in more detail:</p>
+                <ul>
+                    <li><b>Content</b> - the content of the box, where the text and images live.</li>
+                    <li><span class="ic">padding:</span> - an invisible area around the content.</li>
+                    <li><span class="ic">border:</span> - goes around the padding and content.</li>
+                    <li><span class="ic">margin:</span> - an invisible area outside the border.</li>
+                </ul>
+                <p>Look at the box-model image again, you'll notice that there are "top", "bottom", "left", and "right" added. Those are added to the layout properties when you want a specific rule applied to 
+                    a specific side of the content. <span class="ic">padding:</span>, <span class="ic">border:</span>, <span class="ic">margin:</span> are all shorthand properties so that means if you apply just 
+                    one value to them, it applies to all the sides around the content.
+                </p>
+                <pre><code>div {
+    width: 300px; /* Sets the width of the content to 300px */
+    border: 15px solid green; /* Adds a 5px green border around the content on all sides */
+    padding: 20px; /* Adds a 50px padding around the content on all sides */
+    margin: 25px; /* Adds a 25px margin around the border on all sides */
+}</code></pre>
+    <p>However, if you want to apply different rules to each side that's where specific properties becomes really helpful.</p>
+    <pre><code>div {
+    padding-left: 5px; /* Adds a 5px padding on the left side of the content */
+    padding-right: 8px; /* Adds an 8px padding on the right side of the content */
+    margin-top: 10px; /* Adds a 10px margin on top of the content */
+    margin-bottom: 5px; /* Adds a 5px margin on the bottom of the content */
+}
+
+/* And if you want to apply the same rule to their corresponding sides, you can do it like this instead! */
+
+img {
+    padding: 3px 5px; /* Adds a 3px padding to the top and bottom, then adds 5px to the left and right sides */
+    margin: 5px 3px; /* Adds a 5px padding to the top and bottom, then adds 3px to the left and right sides */
+}</code></pre>
+
+<h3>Width and Height of an Element</h3>
+<p>
+    Understanding how the box model works helps you size the width and height of an element correctly! However, when you set a <span class="ic">width:</span> and <span class="ic">height:</span> rule, it only applies to the 
+    content area. To calculate the actual total width and height of an element, you have to add the padding and borders too.
+</p>
+<pre><code>div {
+    width: 400px;
+    height: 250px;
+    border: 5px solid pink; /* 5px border for each side */
+    padding: 10px; /* 10px padding for each side */
+    margin: 5px; /* 5px margin for each side */
+}</code></pre>
+<p>This is how the total element width and height is computed:</p>
+<ul>
+    <li><b>Total element width</b> = width + left padding + right padding + left border + right border</li>
+    <li><b>Total element height</b> = height + top padding + bottom padding + top border + bottom border</li>
+</ul>
+<p>
+    From the code example above, the total element width is 430 and the total element height is 280! And that's pretty much it. Congrats! Now you know how the box-model works!
+</p>
+                    <div class="article-note">
+                        <p>
+                            <b>Important:</b> The margin property also affects the total space that the box will take up on the page, but the margin is not included in the actual size of the box. The box's total width and height stops at the border.
+                        </p>
+                    </div>
                 </section>
 
                 <section id="selectors">
                     <h2>CSS Selectors</h2>
                     <p>
-                       Moving on to CSS selectors, they are used to find or select the HTML elements you want to style. There are many types of selectors, but for
-                       now, we're going to focus on the very basic ones that you'll probably need in styling your profile. 
+                       Moving on to CSS selectors, these <b>selectors</b> are used to find or select the HTML elements you want to style in CSS. There are many types of selectors, but for
+                       now, we're going to focus on the very basic ones that you'll probably going to need in styling your profile. 
                     </p>
 
                     <h3>Element Selectors</h3>
                     <p>
-                       An <b>element selector</b> selects HTML elements based on the element name. This is especially helpful if you want to add a very specific styling to
-                       an element. For instance, you want to make all your paragraphs color red and center aligned. 
+                       An <b>element selector</b> selects HTML elements based on the element name. This is especially helpful if you want to add a styling to a specific
+                       an element in your HTML. For instance, you want to make all your paragraphs color red and center aligned, you can do it like this: 
                     </p>
                     <pre><code>.p {
     color: red; 
@@ -155,7 +241,7 @@
                     <h3>Class Selectors</h3>
                     <p>
                         The <b>class selector</b> selects HTML elemenets with a specific class attribute. In order to do this with CSS, you have to first enter a period
-                        ( . ) followed by the class name then the { }.
+                        <span class="ic">.</span> followed by the class name and then add the styling rules inside the curly brackets <span class="ic">{ }</span>.
                     </p>
                     <h4>HTML Code</h4>
                     <pre><code>&#x3C;!-- Class can be reused across multiple elements --&#x3E;
@@ -168,7 +254,7 @@
 &#x3C;/div&#x3E;
 </code></pre>
                     <h4>CSS Code</h4>
-<pre><code>/* Target a Class using the dot (.) symbol */
+<pre><code>/* Target a Class using the dot (.) symbol first*/
 .card {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
@@ -178,14 +264,14 @@
 }</code></pre>
                     <div class="article-note">
                         <p>
-                            <b>Important:</b> You can't make up new class names when styling in CSS, for it to work, you should always make sure that the class you're
+                            <b>Important:</b> You can't make up new class names in CSS, for it to work, you should always make sure that the class name you're
                             referring to actually exists in your HTML and is identical.
                         </p>
                     </div>
                     <h3>ID Selectors</h3>
                     <p>
                         The <b>id selector</b> uses the id attribute of an HTML element to select a specific element where you want to apply a unique styling to.
-                        In class selectors, you first enter a period, however, with id selectors you use a hastag # instead, then followed by the id name.
+                        In class selectors, you first enter a period, however, with id selectors you use a hastag  <span class="ic">#</span> instead, then followed by the id name of your element.
                     </p>
                     <pre><code>/* Target the ID using the hash (#) symbol */
 #unique-banner {
@@ -197,18 +283,20 @@
 }</code></pre>
                     <h3>Universal Selectors</h3>
                     <p>
-                        The <b>universal selector</b> selects all HTML elements on the page, to do this you have to use an asterisk * and assign properties to it. 
+                        The <b>universal selector</b> selects all HTML elements on the page, to do this you have to use an asterisk  <span class="ic">*</span> and assign properties to it. 
                         So that means if you apply a style rule using a universal selector it will affect everything on your page, which is why its called universal.
                     </p>
+
+                    <p>For example, this code below makes all the text in your page color blue, center-aligned, and all in uppercase letters.</p>
                     <pre><code>* {
-  text-align: center;
   color: blue;
+  text-align: center;
+  text-transform: upppercase;
 }</code></pre>
                     <h3>Grouping Selectrs</h3>
                     <p>
                         The <b>grouping selector</b> selects all the HTML elements with the same styling rules. There are times when you might want the same styling
-                        applied to different HTML elements, for it to be less repetitive, you can group all the HTML elements together and assign the rule you
-                        want. Grouping selectors will help you save code lines!
+                        applied to different HTML elements, instead of repeatedly typing the rules again, you can group all the HTML elements together and assign the styling rule once.
                     </p>
                     <h4>Before</h4>
                     <pre><code>h1 {
@@ -235,111 +323,171 @@ p {
   color: red;
   font-weight: 800px;
 }</code></pre>
+
+                    <div class="article-note">
+                        <p>
+                            <b>Important:</b> When grouping different elements into one selector make sure to separate them using a comma <span class=""ic>,</span> just like the example above.
+                        </p>
+                    </div>
                 </section>
+
 
                 <section id="examples">
                     <h2>Code Examples</h2>
 
                     <p>
-                        Blah blah
+                        Phew! That was lowkey a lot of stuff to cover. Now that you've learned the basic properties, how a box-model works, and how different selectors are used, 
+                        it's time to play with some code examples! Again, feel free to play with the code, change the properties or their values, it's up to you!  
                     </p>
+<h3>Sample Code 1</h3>
+<p>In this sample, we will focus on how universal, grouping, and element selectors are used in CSS with HTML. Open an online compiler like <a href="https://www.codechef.com/html-online-compiler" target="_blank">CodeChef</a>,
+    then paste the "HTML Code" in the <span class="ic">index.html</span> tab and the "CSS Code" in the <span class="ic">style.css</span> tab.
+</p>
 
 <h4>HTML Code</h4>
-                    <pre><code>&#x3C;div id=&#x22;profile-banner&#x22;&#x3E;
-    &#x3C;h1&#x3E;Jane Doe&#x3C;/h1&#x3E;
-    &#x3C;h2&#x3E;Web Developer&#x3C;/h2&#x3E;
-    &#x3C;p&#x3E;Welcome to my personal corner of the internet!&#x3C;/p&#x3E;
-    
-    &#x3C;div class=&#x22;bio-box&#x22;&#x3E;
-        &#x3C;p class=&#x22;highlight&#x22;&#x3E;I love coding and building simple websites.&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;</code></pre>
+<pre><code>&#x3C;h1&#x3E;Welcome!&#x3C;/h1&#x3E;
+&#x3C;h2&#x3E;Made by Kia&#x3C;/h2&#x3E;
+
+&#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&#x3C;/p&#x3E;
+
+&#x3C;text&#x3E;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum.&#x3C;/text&#x3E;</code></pre>
 
 <h4>CSS Code</h4>
-<pre><code>/* 1. Universal Selector */
+<pre><code>/* Used a universal selector to make all text the same color */
 * {
-    box-sizing: border-box;
-    font-family: sans-serif;
+    color: green;
 }
 
-/* 2. Grouping Selector */
+/* Groups the heading elements and assign the same rule */
 h1, h2 {
     text-align: center;
-    color: #2c3e50;
 }
 
-/* 3. Element Selector */
+/* Adds styling to the paragraph element */
 p {
-    color: #555555;
+    font-family: Tahoma;
     font-size: 15px;
+    font-weight: 400;
+    text-decoration: overline 1px solid black;
 }
 
-/* 4. Class Selector */
-.highlight {
-    background-color: #ffeb3b;
-    padding: 4px;
-}
-
-/* 5. ID Selector */
-#profile-banner {
-    background-color: #e0f7fa;
-    padding: 20px;
-    border-radius: 10px;
+/* Adds styling to the text element */
+text {
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: underline 1px solid grey;
 }</code></pre>
 
+<h3>Sample Code 2</h3>
+<p>
+    For this sample, I made a small scrollable window with a photo grid inside. You'll notice that I used a class and id selector to apply styling rules to 
+    the photo-grid element and the images inside it, as well as the random gif outside the photo-grid. Try this code out and I highly encourage you to play with it!
+</p>
+
 <h4>HTML Code</h4>
-<pre><code>&#x3C;div id=&#x22;main-article&#x22;&#x3E;
-    &#x3C;h2&#x3E;CSS Basics&#x3C;/h2&#x3E;
-    
-    &#x3C;div class=&#x22;card&#x22;&#x3E;
-        &#x3C;h3&#x3E;Selectors&#x3C;/h3&#x3E;
-        &#x3C;p&#x3E;Selectors help you target elements easily.&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-    
-    &#x3C;p&#x3E;Thanks for reading!&#x3C;/p&#x3E;
+                    <pre><code>&#x3C;center&#x3E;
+    &#x3C;h2&#x3E;Scroll Inside!&#x3C;/h2&#x3E;
+        &#x3C;div class=&#x22;photo-grid&#x22;&#x3E;
+            &#x3C;img src=&#x22;https://i.pinimg.com/736x/0c/0e/4c/0c0e4cf79680400c07d5d06b7b6d49da.jpg&#x22;&#x3E;
+            &#x3C;img src=&#x22;https://i.pinimg.com/736x/a1/89/5d/a1895d74ef703d6916d6d73152724814.jpg&#x22;&#x3E;
+            &#x3C;img src=&#x22;https://i.pinimg.com/736x/df/94/03/df9403ebaeb327540ec2afa0fe25d5a9.jpg&#x22;&#x3E;
+
+            &#x3C;img src=&#x22;https://i.pinimg.com/736x/0c/0e/4c/0c0e4cf79680400c07d5d06b7b6d49da.jpg&#x22;&#x3E;
+            &#x3C;img src=&#x22;https://i.pinimg.com/736x/a1/89/5d/a1895d74ef703d6916d6d73152724814.jpg&#x22;&#x3E;
+            &#x3C;img src=&#x22;https://i.pinimg.com/736x/df/94/03/df9403ebaeb327540ec2afa0fe25d5a9.jpg&#x22;&#x3E;
+
+            &#x3C;img src=&#x22;https://i.pinimg.com/736x/0c/0e/4c/0c0e4cf79680400c07d5d06b7b6d49da.jpg&#x22;&#x3E;
+            &#x3C;img src=&#x22;https://i.pinimg.com/736x/a1/89/5d/a1895d74ef703d6916d6d73152724814.jpg&#x22;&#x3E;
+            &#x3C;img src=&#x22;https://i.pinimg.com/736x/df/94/03/df9403ebaeb327540ec2afa0fe25d5a9.jpg&#x22;&#x3E;
+        &#x3C;/div&#x3E;
+        
+        &#x3C;br&#x3E; &#x3C;!-- Adds a line break between photo-grid and random container --&#x3E;
+        
+        &#x3C;div id=&#x22;random&#x22;&#x3E;
+            &#x3C;img src=&#x22;https://i.pinimg.com/originals/5e/ab/cd/5eabcd5b8a9f6edd8cfdad3f0e36dacd.gif&#x22;&#x3E;
+        &#x3C;/div&#x3E;
+&#x3C;/center&#x3E;</code></pre>
+
+<h4>CSS Code</h4>
+<pre><code>/* Used a class selector to apply a styling to the photo grid element */
+
+.photo-grid {
+    width: 650px; /* Sets a fixed width of 650 pixels */
+    height: 300px; /* Sets a fixed height of 300 pixels */
+    background-color: pink; /* Sets the background color to pink */
+    border: 3px solid #252525; /* Adds a dark gray solid border of 3px width */
+    overflow-y: auto; /* Adds a vertical scrollbar only when content overflows */
+    overflow-x: hidden; /* Hides any horizontal overflow */
+    padding: 8px; /* Adds 8px of internal spacing around the content */
+    display: grid; /* Enables CSS Grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 columns of equal width */
+    gap: 6px; /* Sets a 6px gap between grid items */
+}
+
+/* Used an element selector to apply a styling to each image*/
+
+img {
+    border: 4px dashed red; /* Adds a red dashed border of 4px width around the image*/
+    width: 200px;
+    height: 200px;
+}
+
+/* Target the image element inside the id 'random' to apply a unique styling*/
+
+#random img {
+    border: 4px dashed purple;
+    width: 300px;
+    height: 200px;
+}</code></pre>
+
+<h3>Code Sample 3</h3>
+<p>
+    And lastly, let's focus a bit more on these layout properties: <span class="ic">padding:</span>, <span class="ic">border:</span>, and <span class="ic">margin:</span>. 
+    This code sample creates a simple 'About Me'box, go ahead and play with it!
+</p>
+<h4>HTML Code</h4>
+<pre><code>&#x3C;div class=&#x22;profile-box&#x22;&#x3E;
+    &#x3C;h2&#x3E;About Me !&#x3C;/h2&#x3E;
+    &#x3C;p&#x3E;Welcome to my retro space! I love coding, music, and watchrotting.&#x3C;/p&#x3E;
+    &#x3C;img src=&#x22;https://i.pinimg.com/736x/0c/0e/4c/0c0e4cf79680400c07d5d06b7b6d49da.jpg&#x22; alt=&#x22;Profile Image&#x22;&#x3E;
 &#x3C;/div&#x3E;</code></pre>
 
 <h4>CSS Code</h4>
-<pre><code>/* 1. Universal Selector */
-* {
-    margin: 0;
-    padding: 0;
+<pre><code>/* The main profile container utilizing the Box Model */
+.profile-box {
+    /* --- Content Area --- */
+    background-color: #ffe0cf;
+    width: 300px;
+    height: 400px;
+
+    /* --- Borders (Shorthand) --- */
+    border: 3px solid brown; /* 3px solid brown border on all sides */
+
+    /* --- Padding (Shorthand & Side-Specific) --- */
+    padding: 15px; /* Applies 15px padding to all sides */
+    padding-left: 25px; /* Overrides the left side specifically */
+
+    margin: 10px; /* Applies 10px margin outside the border on all sides */
+    margin-top: 20px; /* Overrides the top margin specifically */
 }
 
-/* 2. Grouping Selector */
-h2, h3 {
-    color: #d63384;
-}
-
-/* 3. Element Selector */
-p {
-    color: #333333;
-    line-height: 1.5;
-}
-
-/* 4. Class Selector */
-.card {
-    background-color: #ffffff;
-    border: 1px solid #dddddd;
-    padding: 15px;
-    border-radius: 6px;
-    margin: 10px 0;
-}
-
-/* 5. ID Selector */
-#main-article {
-    background-color: #f8f9fa;
-    padding: 30px;
+/* Try adding a padding here and change the margin values too */
+.profile-box img {
+    width: 250px;
+    height: auto;
+    border: 3px dashed hotpink;
+    margin: 5px 15px;
 }</code></pre>
                 </section>
 
-                <section id="resources">
-                    <h2>More Resources</h2>
-                    <ul>
-                        <li>Source</li>
-                        <li>Source</li>
-                        <li>Source</li>
-                    </ul>
+                <section id="notes">
+                    <h2>Author's Note</h2>
+                    <p></p>
                 </section>
 
                 <!-- Previous and next article links -->

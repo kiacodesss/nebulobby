@@ -73,6 +73,8 @@ body {
 
 /* Left sidebar */
 .sidebar {
+    position: sticky;
+    top: 20px;
     flex: 0 0 175px;
     min-width: 0;
     padding: 12px;

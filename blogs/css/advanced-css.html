@@ -34,7 +34,7 @@
                 <p>Use the links below to jump to sections!</p>
                 <a href="#intro">Intro to Advanced CSS</a><br>
                 <a href="#advanced">Advanced Styling</a><br>
-                <a href="#effects">Special Effects</a><br>
+                <a href="#effects">Hover Effects</a><br>
                 <a href="#transitions">Transitions</a><br>
                 <a href="#animations">Animations</a><br>
                 <a href="#examples">Code Examples</a><br>
@@ -52,12 +52,48 @@
                     </h1>
 
                     <p class="article-meta">
-                        October 12, 2026 · 5 min read
+                        October 15, 2026 · 5 min read
                     </p>
                 </header>
 
                 <section id="intro">
-                    <h2>Intro</h2>
+                    <h2>Intro to Advanced CSS</h2>
+                    <p>
+                        Congrats on making it through the end of this lesson. Now, we're moving on to advanced CSS where the fun is.
+                        As I mentioned, we'll focus more on advanced stuff such as applying animations, transitions, cool effects,
+                        and more to your HTML elements. Without further ado, let's get into it!
+                    </p>
+                </section>
+
+                <section id="advanced">
+                    <h2>Advanced Styling</h2>
+                    <h3>Text & Image Shadow Effects</h3>
+                    <p>There are two ways where you can add shadow effects to your elements:</p>
+                    <ul>
+                        <li>text-shadow: - adds a shadow effect to the selected text.</li>
+                        <li>filter: drop-shadow() - adds a shadow effect to an image.</li>
+                    </ul>
+                    <p>This can be done as easy as 1, 2, 3! Just specify the horizonal and vertical shadow, and its color.</p>
+
+                    <h3>Gradients</h3>
+                    <p>
+                        The CSS gradient functions lets you display a smooth transition between two or more colors in an element.
+                        These functions are used within the background-image property.
+                    </p>
+                    <p>There are three types of gradients in CSS:</p>
+                    <ul>
+                        <li>linear-gradient: - color transition goes down, up, left, right, or diagonally.</li>
+                        <li>radial-gradient: - color transition goes out from the center point like a circle halo.</li>
+                        <li>conic-gradient - color transition rotates around the center point.</li>
+                    </ul>
+                    <p>When mentioning the syntax, it looks like this:</p>
+                    <pre><code>background-image: linear-gradient(direction, color-1, color-2);</code></pre>
+                    <p>You can specify the direction by telling it like this: to bottom, to top, to right, to left, to bottom right, etc.</p>
+                    <p>CSS also supports repeating linear gradients and is used like this:</p>
+                    <pre><code>#grad {
+  background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+}
+</code></pre>
                 </section>
             </article>
         </div>

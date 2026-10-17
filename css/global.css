@@ -10,7 +10,7 @@ body {
     font-size: 14px;
     line-height: 1.5;
     color: #252525;
-    background-color: #0B1235;
+    background-color: rgb(216, 216, 216); /* #0B1235 */
 }
 
 /* Center the entire website */
@@ -33,12 +33,13 @@ body {
     display: block;
     width: 100%;
     height: auto;
+    object-fit: fill;
 }
 
 /* Horizontal navigation bar */
 .nav-bar {
-    background-color: black;
-    border-bottom: 2px solid #899b82;
+    background-color: #19172F;
+    border-bottom: 2px solid #F6C85F;
 }
 
 .links {
@@ -59,7 +60,7 @@ body {
 }
 
 .links a:hover {
-    color: yellow;
+    color: #F6C85F;
     text-decoration: underline;
 }
 
